@@ -16,7 +16,9 @@ import java.util.TreeSet;
 public class TestSetAndMap {
 
     public static void main(String[] args) {
-        Set<Student> students = new TreeSet(new StudentComparatorByName());
+//        Set<Student> students = new TreeSet(new StudentComparatorByName());
+        Set<Student> students = new TreeSet();
+        students.add(new Student(10006, "Somsri", 1.98));
         students.add(new Student(10001, "Somchai", 3.59));
         students.add(new Student(10002, "Somchart", 3.15));
         students.add(new Student(10003, "Somkiat", 2.00));
@@ -26,6 +28,7 @@ public class TestSetAndMap {
 //        System.out.println(students);
         students.forEach(System.out::println);
 //        students.forEach((x) -> System.out.println(x));
+
 
     }
 }
